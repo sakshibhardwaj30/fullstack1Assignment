@@ -30,6 +30,56 @@
       height:auto;
     }
     
+        html {
+          scroll-padding-top: 70px;
+          scroll-behavior: smooth;
+        }
+    
+        #container {
+          width: 100%;
+          max-width: 1200px;
+          margin: auto;
+        }
+    
+        
+        .menu {
+          list-style: none;
+          float: right;
+          padding: 0 20px;
+        }
+    
+        .menu li {
+          display: inline-block;
+          line-height: 70px;
+        }
+    
+        .menu li a {
+          transition: 0.4s;
+          display: block;
+          text-decoration: none;
+          color: white;
+          padding: 0px 20px;
+          font-size: 20px;
+          text-transform: uppercase;
+        }
+    
+        .menu li a:hover {
+          color: black;
+          background-color: white;
+        }
+    
+        .show-btn,
+        .hide-btn,
+        #chk {
+          font-size: 30px;
+          line-height: 70px;
+          color: white;
+          display: none;
+          float: right;
+          padding-right: 20px;
+        }
+    
+    
         
     
         
@@ -67,15 +117,28 @@
         <img src="images/logo.png" alt="logo">
       </div>
       <nav>
+        <div id="container">
+            <div id="header">
+              <input type="checkbox" id="chk" />
+              <label for="chk" class="show-btn">
+                <i class="fa fa-bars"></i>
+              </label>
+              <ul class="menu">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Services">Team</a></li>
+                <li><a href="#Team">Technologies</a></li>
+                <li><a href="#contact">contact</a></li>
+        
+                <label for="chk" class="hide-btn">
+                  <i class="fa fa-times"></i>
+                </label>
+              </ul>
+            </div>
+            <a name="top"></a>
+        
     
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Team</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <a class="header-cases" href="#">Cases</a>
+        
     
       </nav>
     
