@@ -12,6 +12,23 @@
           box-sizing: border-box;
           font-family: Arial, Helvetica, sans-serif;
         }
+        header {
+      background-color: #fff;
+      width: 100%;
+      height: 100px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .site-logo {
+      margin-left: 20px;
+    }
+    Usually, the height should be locked to the width to maintain the aspect ratio
+    
+    .site-logo {
+      width: 80%
+      height:auto;
+    }
     
         html {
           scroll-padding-top: 70px;
@@ -98,6 +115,25 @@
 </head>
 
 <body>
+    <header>
+    <div class="site-logo">
+        <img src="images/logo.png" alt="logo">
+      </div>
+      <nav>
+    
+        <ul>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <a class="header-cases" href="#">Cases</a>
+    
+      </nav>
+    
+    </header>
+    
+    
+    
     <div id="container">
         <div id="header">
           <input type="checkbox" id="chk" />
